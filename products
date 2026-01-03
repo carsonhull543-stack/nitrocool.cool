@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Products – NITROCOOL</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="philosophy.html">Philosophy</a><a href="contact.html">Contact</a></nav>
+  <h1>How it works</h1>
+  <ol>
+    <li>Put the shirt on like any compression top.</li>
+    <li>Thread the 16 g CO₂ canister into the side port.</li>
+    <li>Open the purge valve ½ turn—feel the instant chill.</li>
+    <li>Close valve, remove canister, dispose. Play.</li>
+  </ol>
+  <div class="gallery">
+    <img src="img/shirt-front.webp" alt="Front view">
+    <img src="img/shirt-back.webp" alt="Back view">
+  </div>
+  <p class="cta">Coming to team stores Fall 2024. Pre-order list opens May 1.</p>
+  <a class="btn" href="contact.html">Join Wait-list</a>
+</body>
+</html>
