@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NITROCOOL</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="philosophy.html">Philosophy</a><a href="contact.html">Contact</a></nav>
+  <h1>Beat the heat. Play harder.</h1>
+  <p>NITROCOOL is the first CO₂-cooled compression shirt that keeps athletes below body temperature for 25 minutes—no ice, no mess.</p>
+  <a class="btn" href="products.html">Shop Now</a>
+</body>
+</html>
