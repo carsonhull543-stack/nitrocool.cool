@@ -5,21 +5,75 @@
   <title>Products – NITROCOOL</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="philosophy.html">Philosophy</a><a href="contact.html">Contact</a></nav>
-  <h1>How it works</h1>
-  <ol>
-    <li>Put the shirt on like any compression top.</li>
-    <li>Thread the 16 g CO₂ canister into the side port.</li>
-    <li>Open the purge valve ½ turn—feel the instant chill.</li>
-    <li>Close valve, remove canister, dispose. Play.</li>
-  </ol>
-  <div class="gallery">
-    <img src="img/shirt-front.webp" alt="Front view">
-    <img src="img/shirt-back.webp" alt="Back view">
-  </div>
-  <p class="cta">Coming to team stores Fall 2024. Pre-order list opens May 1.</p>
-  <a class="btn" href="contact.html">Join Wait-list</a>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">NITROCOOL</a>
+      <div class="links">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#tech">Tech</a>
+        <a href="index.html#specs">Specs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="theme-toggle" aria-label="toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Prevention in 30 seconds.</h1>
+    <p>Connect a CO₂ cartridge, purge, and play. No ice, no power, no downtime.</p>
+  </section>
+
+  <section class="cards">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Connect</h3>
+        <p>Thread a 16 g CO₂ canister into the side port.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Purge</h3>
+        <p>Open the valve for 3 s—feel instant chill.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Play</h3>
+        <p>Stays &lt; 70 °F for 25 min. Dispose canister when done.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs">
+    <h2>Specifications</h2>
+    <table>
+      <tr><td>Weight</td><td>1.16 lb (without cartridge)</td></tr>
+      <tr><td>Cooling window</td><td>25 min below 70 °F</td></tr>
+      <tr><td>Size range</td><td>XS – XXL</td></tr>
+      <tr><td>Price target</td><td>$60 – $80</td></tr>
+      <tr><td>Cartridge</td><td>16 g food-grade CO₂</td></tr>
+      <tr><td>Fabric</td><td>Compression poly/spandex</td></tr>
+    </table>
+  </section>
+
+  <section class="dark-block">
+    <h2>Tested & proven</h2>
+    <ul>
+      <li>Temperature drop: 15 °F in 30 s</li>
+      <li>Duration: 25 min consistent cooling</li>
+      <li>Comfort rating: 7.5 / 10 (athlete survey)</li>
+      <li>Zero leaks after 6 trials</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 NITROCOOL</p>
+    <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
