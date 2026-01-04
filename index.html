@@ -2,14 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NITROCOOL</title>
+  <title>NITROCOOL – Beat the Heat</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="philosophy.html">Philosophy</a><a href="contact.html">Contact</a></nav>
-  <h1>Beat the heat. Play harder.</h1>
-  <p>NITROCOOL is the first CO₂-cooled compression shirt that keeps athletes below body temperature for 25 minutes—no ice, no mess.</p>
-  <a class="btn" href="products.html">Shop Now</a>
+  <header>
+    <nav>
+      <a class="logo" href="#">NITROCOOL</a>
+      <div class="links">
+        <a href="#product">Product</a>
+        <a href="#tech">Tech</a>
+        <a href="#specs">Specs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="theme-toggle" aria-label="toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="gradient">Beat the heat.<br>Play harder.</h1>
+    <p>Prevention-first CO₂-cooled compression shirt. 25 min of below-body-temp relief—no ice, no mess.</p>
+    <a class="cta" href="#product">Explore</a>
+  </section>
+
+  <section id="product" class="cards">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Connect</h3>
+        <p>Thread a 16 g CO₂ canister into the side port.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Purge</h3>
+        <p>Open the valve for 3 s—feel instant chill.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Play</h3>
+        <p>Stays &lt; 70 °F for 25 min. Dispose canister when done.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="dark-block">
+    <h2>Tech inside</h2>
+    <ul>
+      <li>TPV micro-bore tubing</li>
+      <li>Double-layer compression fabric</li>
+      <li>De-press release ports</li>
+      <li>Replaceable CO₂ cartridges</li>
+    </ul>
+  </section>
+
+  <section id="specs" class="specs">
+    <h2>Specs</h2>
+    <table>
+      <tr><td>Weight</td><td>1.16 lb (without cartridge)</td></tr>
+      <tr><td>Cooling window</td><td>25 min below 70 °F</td></tr>
+      <tr><td>Size range</td><td>XS – XXL</td></tr>
+      <tr><td>Price target</td><td>$60 – $80</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>© 2025 NITROCOOL</p>
+    <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
