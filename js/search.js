@@ -1,7 +1,4 @@
 // Clean search btn + modal
-const searchBtn = document.createElement('button');
-searchBtn.id = 'search-btn';
-searchBtn.innerHTML = '🔍 Search';
 searchBtn.style.cssText = 'background:none;border:1px solid var(--border);color:var(--text);padding:.4rem .8rem;border-radius:var(--radius);font-size:.875rem;cursor:pointer;';
 searchBtn.title = 'Search';
 document.querySelector('nav').appendChild(searchBtn);
