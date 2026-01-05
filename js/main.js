@@ -51,7 +51,7 @@ function openSearch(){
     const hits=pages.filter(p=>p.title.toLowerCase().includes(e.target.value.toLowerCase()));
     list.innerHTML=hits.map(p=>`<li><a style="color:var(--accent);text-decoration:none;" href="${p.url}">${p.title}</a></li>`).join('');
   });
-  modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});
+  closeBtn.onclick = () => { modal.remove(); };
 }
 document.getElementById('search-btn').addEventListener('click',openSearch);
 window.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();openSearch();}});
