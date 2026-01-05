@@ -32,6 +32,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
     modal.innerHTML=`
     <div style="position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center;">
       <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);width:90%;max-width:500px;padding:1rem;">
+      <button style="float:right;background:none;border:none;color:var(--text);font-size:1.2rem;cursor:pointer;" onclick="modal.remove()">×</button>
         <input id="search-input" type="text" placeholder="Search pages…" style="width:100%;padding:.5rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);">
         <ul id="search-results" style="margin-top:1rem;list-style:none;padding:0;"></ul>
       </div>
