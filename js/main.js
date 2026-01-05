@@ -15,37 +15,43 @@ toggle.addEventListener('click', () => {
   toggle.textContent = next === 'dark' ? '🌙' : '☀️';
 });
 
-// attach click to the visible search button
-document.getElementById('search-btn').addEventListener('click', () => {
-  // inject the same modal we deleted earlier
-  const pages = [
-    {title:'Home',url:'index.html'},
-    {title:'About',url:'about.html'},
-    {title:'Products',url:'products.html'},
-    {title:'Philosophy',url:'philosophy.html'},
-    {title:'Contact',url:'contact.html'}
-  ];
-  let modal, input, list;
-  function open(){
-    if(modal) return;
-    modal = document.createElement('div');
-    modal.innerHTML=`
-    <div style="position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center;">
-      <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);width:90%;max-width:500px;padding:1rem;">
-        <button style="position:absolute;top:.5rem;right:.5rem;background:#ff0040;border:none;color:#fff;font-size:1.4rem;cursor:pointer;padding:0 .4rem;border-radius:4px;" onclick="modal.remove()">×</button>
-        <input id="search-input" type="text" placeholder="Search pages…" style="width:100%;padding:.5rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);">
-        <ul id="search-results" style="margin-top:1rem;list-style:none;padding:0;"></ul>
-      </div>
-    </div>`;
-    document.body.appendChild(modal);
-    input = modal.querySelector('#search-input');
-    list  = modal.querySelector('#search-results');
-    input.focus();
-    input.addEventListener('input',e=>{
-      const hits=pages.filter(p=>p.title.toLowerCase().includes(e.target.value.toLowerCase()));
-      list.innerHTML=hits.map(p=>`<li><a style="color:var(--accent);text-decoration:none;" href="${p.url}">${p.title}</a></li>`).join('');
-    });
-    modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});
-  }
-  open();
-});
+const pages = [
+  {title:'Home',url:'index.html'},
+  {title:'About',url:'about.html'},
+  {title:'Products',url:'products.html'},
+  {title:'Philosophy',url:'philosophy.html'},
+  {title:'Contact',url:'contact.html'}
+];
+let modal, input, list;
+function openSearch(){
+  if(modal) return;
+  modal = document.createElement('div');
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center;';
+  const card = document.createElement('div');
+  card.style.cssText = 'background:var(--card);border:1px solid var(--border);border-radius:var(--radius);width:90%;max-width:500px;padding:1rem;position:relative;';
+  const closeBtn = document.createElement('button');
+  closeBtn.innerHTML = '×';
+  closeBtn.style.cssText = 'position:absolute;top:.5rem;right:.5rem;background:#ff0040;border:none;color:#fff;font-size:1.4rem;cursor:pointer;padding:0 .4rem;border-radius:4px;';
+  closeBtn.onclick = () => modal.remove();
+  const inp = document.createElement('input');
+  inp.id = 'search-input';
+  inp.type = 'text';
+  inp.placeholder = 'Search pages…';
+  inp.style.cssText = 'width:100%;padding:.5rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);';
+  const ul = document.createElement('ul');
+  ul.id = 'search-results';
+  ul.style.cssText = 'margin-top:1rem;list-style:none;padding:0;';
+  card.append(closeBtn, inp, ul);
+  modal.appendChild(card);
+  document.body.appendChild(modal);
+  input = inp;
+  list  = ul;
+  input.focus();
+  input.addEventListener('input',e=>{
+    const hits=pages.filter(p=>p.title.toLowerCase().includes(e.target.value.toLowerCase()));
+    list.innerHTML=hits.map(p=>`<li><a style="color:var(--accent);text-decoration:none;" href="${p.url}">${p.title}</a></li>`).join('');
+  });
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.remove();});
+}
+document.getElementById('search-btn').addEventListener('click',openSearch);
+window.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key==='k'){e.preventDefault();openSearch();}});
