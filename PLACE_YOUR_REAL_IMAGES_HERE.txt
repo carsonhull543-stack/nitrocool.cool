@@ -1,0 +1,11 @@
+These are placeholder empty files created so the project has the expected paths.
+
+REPLACE these with your real uploads (same filenames), otherwise images will not display.
+
+Required filenames:
+- logo.png
+- device-1.jpg
+- merch-1.jpg
+- merch-2.jpg
+- merch-3.jpg
+- og-cover.jpg
