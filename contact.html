@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact / Updates — NITROCOOL</title>
+  <meta name="description" content="Contact NITROCOOL for partnerships, pilots, testing, or updates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-elevate>
+    <div class="container nav">
+      <a class="brand" href="../index.html" aria-label="NITROCOOL home">
+        <img class="brand__mark" src="../images/logo.png" alt="NITROCOOL logo" onerror="this.style.display='none'" />
+        <span class="brand__text">NITROCOOL</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" data-nav-links aria-label="Primary">
+        <a href="how-it-works.html">How it works</a>
+        <a href="use-cases.html">Use cases</a>
+        <a href="technology.html">Technology</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About</a>
+        <a href="ip-legal.html">IP & Legal</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--primary" href="#contact-form">Contact / Partnerships</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Contact</span></div>
+        <h1 class="page-title">Contact / updates</h1>
+        <p class="page-subtitle">For partnerships, pilot testing, university collaboration, press, or merch interest—reach the NITROCOOL founding team using the form below or email directly.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <h3 class="panel__title">Direct contact (founding team)</h3>
+          <div class="prose">
+            <p><strong>Email:</strong> <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/nitro.cool" target="_blank" rel="noreferrer">@nitro.cool</a></p>
+            <p class="muted">Use the form below to reach the NITROCOOL team. Messages are collected via Google Forms.</p>
+          </div>
+
+          <div class="notice" style="margin-top:12px">
+            <strong>Partnerships / pilots:</strong> Include location, environment (heat conditions), timeline, and team size.
+          </div>
+        </div>
+
+        <div class="panel" id="contact-form">
+          <h3 class="panel__title">Contact form</h3>
+          <iframe name="nc_hidden_iframe" id="nc_hidden_iframe" title="Hidden form submission" style="display:none"></iframe>
+          <div class="notice" id="nc_thanks" style="display:none; margin-bottom:12px">
+            <strong>Thanks!</strong> Your message was sent. We’ll get back to you as soon as we can.
+          </div>
+          <!-- Contact form submits to Google Forms using a hidden iframe to keep users on-page. -->
+          <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSe6_BlBzLczgWHWxVgqlPF4H38NTPCXn0xHoXFGzDmqKjbjAQ/formResponse" method="POST" target="nc_hidden_iframe" autocomplete="on" data-gform>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="entry.2005620554" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="entry.1045781291" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="organization">Organization (optional)</label>
+              <input id="organization" name="entry.1065046570" type="text" autocomplete="organization" />
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="interest">I’m reaching out about</label>
+                <select id="interest" name="entry.1166974658" required>
+                  <option value="Partnership / Pilot">Partnership / Pilot</option>
+                  <option value="University / Lab collaboration">University / Lab collaboration</option>
+                  <option value="Press / Media">Press / Media</option>
+                  <option value="Merch">Merch</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="entry.839337160" type="text" placeholder="NITROCOOL — Partnership inquiry" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="entry.697773374" required placeholder="Tell us what you’re looking for (pilot details, environment, timeline, etc.)"></textarea>
+              <div class="helper">Tip: include location, time frame, and any constraints (heat conditions, duty cycle, team size).</div>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <div class="helper">After you click send, a new tab may open. You can close it and return here.</div>
+            <div class="helper">We read every message. If you don’t hear back within a few days, follow up via <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a>.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Prefer email?</h2>
+            <p class="lead">Send a note to <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a>.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--primary" href="mailto:hello@nitrocool.cool?subject=NITROCOOL%20—%20Inquiry">Email now</a>
+            <a class="btn btn--ghost" href="https://instagram.com/nitro.cool" target="_blank" rel="noreferrer">DM on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="brand brand--footer">
+          <img class="brand__mark" src="../images/logo.png" alt="" onerror="this.style.display='none'" />
+          <span class="brand__text">NITROCOOL</span>
+        </div>
+        <p class="muted">Instant cooling. Anywhere. No power required.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Pages</h4>
+          <a href="how-it-works.html">How it works</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="technology.html">Technology</a>
+          <a href="research.html">Research</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="ip-legal.html">IP & Legal</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@nitrocool.cool">hello@nitrocool.cool</a>
+          <a href="https://instagram.com/nitro.cool" target="_blank" rel="noreferrer">Instagram @nitro.cool</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="muted">© <span data-year></span> NITROCOOL. All rights reserved.</span>
+        <span class="muted">Engineered for real-world heat.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
